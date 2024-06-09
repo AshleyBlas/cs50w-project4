@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div  class="h-100">
+    <div id="profile-container" >
+    </div>
+
+    <nav aria-label="Pagination" class="mt-3 ms-2 p-3" id="pagination">
+
+    </nav>
+</div>
+
+
+
+<script>
+    const username = "{{username}}";
+</script>
+
+<script type="module" src="{% static 'network/profile/Profile.js' %}"></script>
+{% endblock %} 
