@@ -22,7 +22,7 @@ class Post(models.Model):
             "user": self.user.username,
             "content": self.content,
             "likes": self.likes.count(),
-            "timestamp": self.timestamp,
+            "timestamp": self.timestamp.strftime('%b %d %Y, %I:%M %p'),
         }
     
     def __str__(self):

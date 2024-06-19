@@ -6,8 +6,15 @@
     <div id="profile-container" >
     </div>
 
-    <nav aria-label="Pagination" class="mt-3 ms-2 p-3" id="pagination">
+    <hr>
+    <h2>Posts</h2>
 
+    <div id="feed"></div>
+
+    <nav aria-label="Pagination" class="mt-3 ms-2 p-3">
+        <ul class="pagination pagination-lg" id="pagination">
+
+        </ul>
     </nav>
 </div>
 
@@ -15,7 +22,8 @@
 
 <script>
     const username = "{{username}}";
+    const currentUser = "{{request.user.username}}";
 </script>
 
-<script type="module" src="{% static 'network/profile/Profile.js' %}"></script>
+<script type="module" src="{% static 'network/profile.js' %}"></script>
 {% endblock %} 
